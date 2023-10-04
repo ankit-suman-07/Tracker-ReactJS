@@ -52,7 +52,7 @@ form {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #f6e7e5;
+    background-color: #82ac7c;
 }
 
 input,
@@ -134,7 +134,6 @@ select,
 }
 
 .box-head {
-    border: 2px solid #333333;
     background-color: #333333;
     height: 40px;
     color: #ffff;
@@ -172,11 +171,12 @@ select,
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: #f4efd7;
+    /* background-color: #f4efd7; */
+        background-color: #c38d4f;
 }
 
 .top-spends {
-    background-color: #d1dac3;
+    background-color: #a74a43;
 }
 
 .top-spends-outer {

@@ -25,7 +25,23 @@ export const ExpenseComp = () => {
 
   const dispatch = useDispatch();
 
-  const categories = ["Rent", "Outing", "Trip", "Gadgets", "Grocery", "Cafe", "Travel", "Subscription", "Tax"];
+  const categories = [
+    "Rent",
+    "Utilities",
+    "Groceries",
+    "Dining",
+    "Entertainment",
+    "Transportation",
+    "Healthcare",
+    "Education",
+    "Travel",
+    "Clothing",
+    "Insurance",
+    "Savings",
+    "Gifts",
+    "Miscellaneous"
+  ];
+
 
 
 
@@ -134,15 +150,15 @@ export const ExpenseComp = () => {
                 <form onSubmit={handleFormSubmit}>
                   <input type='text' placeholder='Enter Item' name='item' />
                   <input type='text' placeholder='Enter Amount' name='amount' />
-                  <select name="category" id="category" >
-                    <option value="Select" disabled default>Select Category</option>
-                    {
-                      categories.map((category, idx) => (
-                        <option key={idx} value={category}>{category}</option>
-                      ))
-                    }
-
+                  <select name="category" id="category" defaultValue="Select">
+                    <option value="Select" disabled>Select Category</option>
+                    {categories.map((category, idx) => (
+                      <option key={idx} value={category}>
+                        {category}
+                      </option>
+                    ))}
                   </select>
+
                   <input type='date' placeholder='Enter Date' name='date' />
                   <button type='submit' className="add-btn" >Add Expense</button>
                 </form>
