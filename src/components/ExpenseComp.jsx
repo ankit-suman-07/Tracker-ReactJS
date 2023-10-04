@@ -104,7 +104,7 @@ export const ExpenseComp = () => {
 
 
     fetchData();
-  }, [user, amount, dispatch, expense]);
+  }, [user, dispatch]); //[user, amount, dispatch, expense]
 
   useEffect(() => {
 
@@ -179,7 +179,7 @@ export const ExpenseComp = () => {
                     {expense.map((item, idx) => (
                       <>
                         <span className="expense-line" > {item} </span>
-                        <span className="expense-line" > {amount[idx]} </span>
+                        <span className="expense-line" > $ {amount[idx]} </span>
                         <span className="expense-line" > {category[idx]} </span>
                         <span className="expense-line" > {date[idx]} </span>
                       </>

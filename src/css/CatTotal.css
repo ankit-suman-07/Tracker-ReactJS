@@ -12,13 +12,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 5px;
-    font-size: 14px;
+    padding: 4px;
+        font-size: 12px;
 }
 
 .card-total-head {
     font-weight: 600;
-    font-size: 15px;
+    font-size: 14px;
 }
 
 .total {
