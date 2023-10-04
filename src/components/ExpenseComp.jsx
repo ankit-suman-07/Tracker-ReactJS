@@ -21,7 +21,7 @@ export const ExpenseComp = () => {
   const [category, setCategory] = useState([]);
   const [date, setDate] = useState([]);
   const [user, setUser] = useState(null);
-  const [userName, setUserName] = useState("");
+  // const [userName, setUserName] = useState("");
 
   const dispatch = useDispatch();
 
@@ -112,12 +112,12 @@ export const ExpenseComp = () => {
     if (user) {
 
       if (expense.length !== 0) {
-        setUserName(user.displayName);
-        console.log(userName);
+        // setUserName(user.displayName);
+        // console.log(userName);
         writeExpenses(expense, amount, category, date, total, user.email);
       }
     }
-  }, [expense, amount, category, date, dispatch, total, user, userName]);
+  }, [expense, amount, category, date, dispatch, total, user]);
 
   return (
     <div className="expense-comp" >
