@@ -1,0 +1,38 @@
+.signin-comp {
+
+    height: 50px;
+    width: 100px;
+    margin-right: 10px;
+}
+
+.signin-comp button {
+    border: 2px solid #fff;
+    border-radius: 10px;
+    background-color: #222222;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.signin-comp button:hover {
+    color: #222222;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+    .signin-comp {
+
+        height: 40px;
+        width: 70px;
+        margin-right: 10px;
+    }
+
+    .signin-comp button {
+        font-size: 12px;
+        font-weight: 600;
+    }
+}

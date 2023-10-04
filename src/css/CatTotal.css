@@ -1,0 +1,26 @@
+.cat-total {
+    /* border: 2px solid green; */
+    margin: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 5px;
+}
+
+.cat-total-units {
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    font-size: 14px;
+}
+
+.card-total-head {
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.total {
+    margin: 0 5px 5px 5px;
+}

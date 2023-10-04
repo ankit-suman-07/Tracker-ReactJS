@@ -1,0 +1,211 @@
+nav {
+    background-color: #222222;
+    border-radius: 10px;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    /* border: 2px solid black; */
+    color: #fff;
+    font-size: 25px;
+    font-weight: 800;
+    margin-left: 10px;
+}
+
+.prompt {
+    /* border: 2px solid black; */
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.main-screen {
+    /* border: 2px solid black; */
+    min-height: calc(100vh - 70px);
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.box {
+    /* border: 2px solid black; */
+    border-radius: 10px;
+    height: 350px;
+    overflow: hidden;
+    /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
+}
+
+form {
+    /* border: 2px solid black; */
+    border-radius: 5px;
+    background-color: #fff;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+.form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f6e7e5;
+}
+
+input,
+select,
+.add-btn {
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.add-btn {
+    background-color: #333333;
+    color: #d3b66e;
+    font-weight: 600;
+}
+
+.expense-element {
+    /* border: 2px solid red; */
+    display: grid;
+    grid-template-columns: 0.9fr 0.9fr 1.2fr 1fr;
+    grid-gap: 5px;
+    margin: 5px 0 5px 0;
+}
+
+.expense-element span {
+    border-radius: 5px;
+}
+
+.expense-head {
+    background-color: #333333;
+    color: #fff;
+    font-weight: 600;
+}
+
+.expense-line {
+    background-color: #fff;
+    font-size: 12px;
+}
+
+.expense-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #f1e0d1;
+}
+
+.expense-outer {
+    /* border: 2px solid green; */
+    padding: 5px;
+    height: calc(300px);
+    overflow-y: auto;
+}
+
+/* Hide the scrollbar */
+.expense-outer::-webkit-scrollbar {
+    width: 0.0em;
+    /* Set the width of the scrollbar */
+}
+
+/* Hide the scrollbar track */
+.expense-outer::-webkit-scrollbar-track {
+    background-color: transparent;
+    /* Set the background color of the track */
+}
+
+/* Hide the scrollbar handle */
+.expense-outer::-webkit-scrollbar-thumb {
+    background-color: transparent;
+    /* Set the color of the handle */
+}
+
+.expense-element span {
+    height: 30px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-head {
+    border: 2px solid #333333;
+    background-color: #333333;
+    height: 40px;
+    color: #ffff;
+    font-size: 16px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pie-chart {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #e3d9cf;
+}
+
+.pie-chart-style {
+    width: 200px;
+}
+
+.pie-chart-outer {
+    /* border: 2px solid red; */
+    height: calc(100% - 40px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cat-total-units {
+    background-color: #fff;
+}
+
+.total-expend {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #f4efd7;
+}
+
+.top-spends {
+    background-color: #d1dac3;
+}
+
+.top-spends-outer {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bar-graph {
+    background-color: #ededed;
+}
+
+@media only screen and (max-width: 900px) {
+    .main-screen {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .main-screen {
+        grid-template-columns: 1fr;
+    }
+
+    nav {
+        font-size: 20px;
+    }
+
+    .prompt {
+        font-size: 12px;
+    }
+}
