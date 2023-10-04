@@ -113,7 +113,7 @@ export const ExpenseComp = () => {
 
       if (expense.length !== 0) {
         setUserName(user.displayName);
-        console.log(userName);
+
         writeExpenses(expense, amount, category, date, total, user.email);
       }
     }
