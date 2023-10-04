@@ -21,6 +21,7 @@ export const ExpenseComp = () => {
   const [category, setCategory] = useState([]);
   const [date, setDate] = useState([]);
   const [user, setUser] = useState(null);
+  const [userName, setUserName] = useState("");
 
   const dispatch = useDispatch();
 
@@ -95,6 +96,8 @@ export const ExpenseComp = () => {
     if (user) {
 
       if (expense.length !== 0) {
+        setUserName(user.displayName);
+        console.log(userName);
         writeExpenses(expense, amount, category, date, total, user.email);
       }
     }
